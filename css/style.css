@@ -1003,3 +1003,29 @@ button:hover {
         padding: 80px 50px 100px 50px;
     }
 }
+.date-group input[type="date"] {
+    -webkit-appearance: none;  /* Отключаем эппловскую стандартную херню */
+    appearance: none;
+    
+    box-sizing: border-box;     /* Заставляем рамку и паддинги считаться ВНУТРИ 100% ширины */
+    width: 100%;                /* Прижимаем строго к краям родительского блока */
+    max-width: 100%;            /* Не даем ему расширяться ни на пиксель */
+    
+    min-height: 44px;           /* Стандартная высота для мобильных инпутов */
+    position: relative;
+}
+
+/* На всякий случай чистим внутренние стрелочки и иконки календаря в Safari */
+.date-group input[type="date"]::-webkit-calendar-picker-indicator,
+.date-group input[type="date"]::-webkit-inner-spin-button {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
