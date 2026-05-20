@@ -1003,29 +1003,29 @@ button:hover {
         padding: 80px 50px 100px 50px;
     }
 }
-.date-group input[type="date"] {
-    -webkit-appearance: none;  /* Отключаем эппловскую стандартную херню */
-    appearance: none;
-    
-    box-sizing: border-box;     /* Заставляем рамку и паддинги считаться ВНУТРИ 100% ширины */
-    width: 100%;                /* Прижимаем строго к краям родительского блока */
-    max-width: 100%;            /* Не даем ему расширяться ни на пиксель */
-    
-    min-height: 44px;           /* Стандартная высота для мобильных инпутов */
-    position: relative;
+input[type="date"] {
+  /* Убираем внутренние тени и стандартный стиль Apple */
+  -webkit-appearance: none;
+  appearance: none;
+  
+  /* Явно задаем цвета, чтобы текст не сливался с фоном */
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  
+  /* Исправляем баг с высотой строки в iOS */
+  line-height: normal !important;
+  min-height: 40px; 
+  
+  /* Внутренние отступы для удобного нажатия пальцем */
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-/* На всякий случай чистим внутренние стрелочки и иконки календаря в Safari */
-.date-group input[type="date"]::-webkit-calendar-picker-indicator,
-.date-group input[type="date"]::-webkit-inner-spin-button {
-    background: transparent;
-    bottom: 0;
-    color: transparent;
-    cursor: pointer;
-    height: auto;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: auto;
+/* Главный фикс для iOS: оживляет отображение текста и даты */
+input[type="date"]::-webkit-date-and-time-value {
+  text-align: left;
+  /* Убирает баг, когда текст скрывается или обрезается */
+  height: 1.2em; 
+  margin: 0;
 }
