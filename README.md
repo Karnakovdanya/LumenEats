@@ -1,4 +1,4 @@
-# Lumen Eats — Premium Restauran
+# Lumen Eats — Premium Restaurant Website
 
 Welcome to the **Lumen Eats** repository! This is a modern, fully responsive multi-page website designed for a premium Spanish and coastal kitchen restaurant. 
 
