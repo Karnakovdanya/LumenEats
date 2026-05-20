@@ -1003,29 +1003,3 @@ button:hover {
         padding: 80px 50px 100px 50px;
     }
 }
-input[type="date"] {
-  /* Убираем внутренние тени и стандартный стиль Apple */
-  -webkit-appearance: none;
-  appearance: none;
-  
-  /* Явно задаем цвета, чтобы текст не сливался с фоном */
-  background-color: #ffffff !important;
-  color: #000000 !important;
-  
-  /* Исправляем баг с высотой строки в iOS */
-  line-height: normal !important;
-  min-height: 40px; 
-  
-  /* Внутренние отступы для удобного нажатия пальцем */
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-/* Главный фикс для iOS: оживляет отображение текста и даты */
-input[type="date"]::-webkit-date-and-time-value {
-  text-align: left;
-  /* Убирает баг, когда текст скрывается или обрезается */
-  height: 1.2em; 
-  margin: 0;
-}
