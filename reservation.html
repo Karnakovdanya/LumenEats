@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Daniil">
+        <meta name="keywords" content="Lumen Eats, Spanish restaurant, Mediterranean cuisine, paella, fresh seafood, wine list, table reservation, fine dining, restaurant menu">
+        <meta name="description" content="Lumen Eats Restaurant — authentic Spanish cuisine. Fresh seafood, traditional paella, fine wines, and cozy atmosphere. Book your table now!">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <title>Reservation</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="reserv-header">
+            <nav id="header-nav">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="index.html"><div id="logo-img" alt="Logo image"></div></a>
+                        <div class="navbar-brand">
+                            <a href="index.html"><h1>Lumen Eats</h1></a>
+                            <p>Fine Dining Certified</p>
+                        </div>
+                    </div>
+
+                                  <!--это для бургера!!-->
+                    <div class="navigation">
+                        <input type="checkbox" class="toggle-menu">
+                        <div class="hamburger"></div>
+                
+
+                    <div class="list-menu">
+                        <ul>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li class="active"><a href="">Reservation</a></li>
+                            <li><a href="tel:+15551234567" class="phone-link">555-123-4567</a><br>
+                            <span class="phone-sub">Call to book a table</span></span>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="reserv-main">
+            <div class="reserv-form">
+                <div class="form-header">
+                    <img src="img/logo.png" alt="Lumen Eats Logo">
+                    <h1>Lumen Eats</h1>
+                    <p>Fine Dining Certified</p>
+                </div>
+
+                <h2>RESERVATION</h2>
+
+                <form id="reservationForm" action="#" method="POST"> <!-- action - куда данные будут отправлять а Post отправляет в теле запроса-->
+                    
+                    <select name="time" required>
+                        <option value="" disabled selected hidden>Time (Dropdown for times, e.g., 19:30)</option>
+                        <option value="18:00">18:00</option>
+                        <option value="18:30">18:30</option>
+                        <option value="19:00">19:00</option>
+                        <option value="19:30">19:30</option>
+                        <option value="20:00">20:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:00">21:00</option>
+                    </select>
+                
+                
+                    <select name="guests">
+                        <option value="" disabled selected hidden>Guests (Dropdown for numbers)</option>
+                        <option value="1">1 People</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5 People</option>
+                        <option value="6">6+ People</option>
+                    </select>
+
+                    <div class="date-group"> 
+                       <input type="date" required>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" placeholder="Full Name" required>
+                     </div>
+
+                    <div class="input-row">
+                         <div class="input-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                         <textarea placeholder="Special Requests"></textarea>
+                    </div>
+
+                    <button type="submit">Confirm Reservation</button>
+                </form>
+
+                <h3>LUMEN EATS / RESTAURANT & COASTAL KITCHEN <br><span> Since 1982</span></h3>
+            </div>
+        </main>
+
+        <footer>
+            <div id="foot-container">
+                <div id="cont-foot">
+                <div class="time">
+                    <h2>Hours:</h2>
+                    <p>Mon-Thu: 12:00pm – 11:00pm <br> Fri-Sun: 12:00pm – 01:00am <br><i>Join us for the Golden Hour sunset.</i></p>
+                </div>
+                <div class="address">
+                    <h2>Address:</h2>
+                    <p>P.º de Carlos III, 3C<br> 11003, Cádiz, Spain<br><i>Private valet parking and yacht service available.</i></p>
+                </div>
+                </div>
+                <h3>© Copyright Lumen Eats Oceanic Restaurant 2026</h3>
+            </div>
+        </footer>
+
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>       
